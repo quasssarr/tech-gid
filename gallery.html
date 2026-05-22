@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Gid — Галерея техники</title>
+    <link rel="author" href="https://t.me/quazzzarr" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">menu<span></span></label>
+      <ul class="menu__box">
+        <li><a class="menu__item menu__item--cta" href="login.html">Вход</a></li>
+        <li><a class="menu__item" href="index.html">Главная</a></li>
+        <li><a class="menu__item" href="gallery.html">Галерея техники</a></li>
+        <li class="menu__has-sub">
+          <input type="checkbox" id="sub-reviews" class="menu__sub-toggle" />
+          <label for="sub-reviews" class="menu__item">Обзоры <span class="menu__arrow">›</span></label>
+          <ul class="menu__sub">
+            <li><a class="menu__subitem" href="reviews.html">Все обзоры</a></li>
+            <li><a class="menu__subitem" href="reviews.html#smartphones">Смартфоны</a></li>
+            <li><a class="menu__subitem" href="reviews.html#notebooks">Ноутбуки</a></li>
+            <li><a class="menu__subitem" href="reviews.html#gadgets">Гаджеты</a></li>
+          </ul>
+        </li>
+        <li class="menu__has-sub">
+          <input type="checkbox" id="sub-tests" class="menu__sub-toggle" />
+          <label for="sub-tests" class="menu__item">Тестирования <span class="menu__arrow">›</span></label>
+          <ul class="menu__sub">
+            <li><a class="menu__subitem" href="tests.html">Все тесты</a></li>
+            <li><a class="menu__subitem" href="tests.html#performance">Производительность</a></li>
+        <li><a class="menu__subitem" href="tests.html#battery">Автономность</a></li>
+        <li><a class="menu__subitem" href="tests.html#cameras">Камеры</a></li>
+          </ul>
+        </li>
+        <li class="menu__has-sub">
+          <input type="checkbox" id="sub-partners" class="menu__sub-toggle" />
+          <label for="sub-partners" class="menu__item">Партнёры <span class="menu__arrow">›</span></label>
+          <ul class="menu__sub">
+            <li><a class="menu__subitem" href="partners.html">Все партнёры</a></li>
+            <li><a class="menu__subitem" href="partners.html#service">Сервисные центры</a></li>
+            <li><a class="menu__subitem" href="partners.html#shops">Магазины техники</a></li>
+          </ul>
+        </li>
+        <li><a class="menu__item" href="faq.html">FAQ</a></li>
+        <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="container header-wrap">
+        <a class="logo" href="index.html" title="На главную">
+          <img src="images/logo.jpg" alt="Логотип Tech-Gid" />
+          <span>Tech-Gid</span>
+        </a>
+        <nav class="top-nav" aria-label="Основная навигация">
+        <ul>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-reviews" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-reviews">Обзоры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="reviews.html">Все обзоры</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#smartphones">Смартфоны</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#notebooks">Ноутбуки</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#gadgets">Гаджеты</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-tests" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-tests">Тестирования <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="tests.html">Все тесты</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#performance">Производительность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#battery">Автономность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#cameras">Камеры</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-partners" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-partners">Партнёры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="partners.html">Все партнёры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#service">Сервисные центры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#shops">Магазины техники</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link top-nav__link--cta" href="login.html">Вход</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+    <main class="container" id="gallery">
+      <section class="section">
+        <h1>Галерея техники</h1>
+        <p>Подборка техники по тематике Tech-Gid — без лишнего «шума»: смартфоны, ноутбуки, гаджеты и аксессуары.</p>
+      </section>
+
+      <section class="section">
+        <h2>Подборка</h2>
+        <div class="cards">
+          <article class="card">
+            <a class="card-link" href="#lb-iphone-15-pro-max">
+              <img class="card-thumb" src="images/iphone15promax.jpeg" alt="iPhone 15 Pro Max" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Смартфон</span>
+                <span class="score">9.2 / 10</span>
+                <h3>iPhone 15 Pro Max</h3>
+                <p class="muted">Камера ночью, автономность и стабильность системы.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-macbook-pro-m3">
+              <img class="card-thumb" src="images/macbookprom3.jpg" alt="MacBook Pro M3" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Ноутбук</span>
+                <span class="score">9.5 / 10</span>
+                <h3>MacBook Pro M3</h3>
+                <p class="muted">Производительность в реальных задачах и удобство в работе.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-apple-watch-ultra-2">
+              <img class="card-thumb" src="images/applewatchultra2.jpg" alt="Apple Watch Ultra 2" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Гаджет</span>
+                <span class="score">8.8 / 10</span>
+                <h3>Apple Watch Ultra 2</h3>
+                <p class="muted">Спорт, здоровье, уведомления и автономность.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card-link" href="#lb-samsung-galaxy-s24-ultra">
+              <img class="card-thumb" src="images/samsung_s24_ultra_512.jpg" alt="Samsung Galaxy S24 Ultra" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Смартфоны</span>
+                <span class="score">9.5 / 10</span>
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p class="muted">Экран, AI-функции, камера 200 Мп и S Pen.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-asus-rog-zephyrus-g14">
+              <img class="card-thumb" src="images/81zrEeTlHbL.jpg" alt="ASUS ROG Zephyrus G14" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Ноутбуки</span>
+                <span class="score">9.2 / 10</span>
+                <h3>ASUS ROG Zephyrus G14</h3>
+                <p class="muted">Игровой ноутбук, компактный и мощный.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-samsung-galaxy-watch-7-ultra">
+              <img class="card-thumb" src="images/images.jpg" alt="Samsung Galaxy Watch 7 Ultra" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Гаджеты</span>
+                <span class="score">8.6 / 10</span>
+                <h3>Samsung Galaxy Watch 7 Ultra</h3>
+                <p class="muted">Спортивные функции, титановый корпус.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-sony-wh-1000xm6">
+              <img class="card-thumb" src="images/Sluchawki-nauszne-SONY-WH-1000XM6-ANC-Czarny-1.jpg" alt="Sony WH-1000XM6" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Аксессуары</span>
+                <span class="score">9 / 10</span>
+                <h3>Sony WH-1000XM6</h3>
+                <p class="muted">Лучший шумодав на рынке, комфорт, микрофоны и задержка.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-ipad-pro-m4">
+              <img class="card-thumb" src="images/iPad_Pro_11_M4_Cellular_Space_Black_PDP_Image_Position_1b__pl_PL_4.jpg" alt="iPad Pro M4" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Планшеты</span>
+                <span class="score">8.8 / 10</span>
+                <h3>iPad Pro M4</h3>
+                <p class="muted">OLED-экран, чип M4, Apple Pencil Pro и мультизадачность.</p>
+              </div>
+            </a>
+          </article>
+          <article class="card">
+            <a class="card-link" href="#lb-playstation-5-pro">
+              <img class="card-thumb" src="images/Konsola-PlayStation-5-Pro-EAN-GTIN-711719595472.jpg" alt="PlayStation 5 Pro" loading="lazy" />
+              <div class="card-body">
+                <span class="tag">Аксессуары</span>
+                <span class="score">9.2 / 10</span>
+                <h3>PlayStation 5 Pro</h3>
+                <p class="muted">Трассировка лучей, 60+ FPS, адаптивный триггер и SSD.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <p class="muted" style="margin-top: 14px">Хочешь добавить ещё карточки — напиши через <a href="contacts.html">контакты</a>.</p>
+      </section>
+    </main>
+
+    <!-- CSS-лайтбокс без JavaScript: открытие по :target -->
+    <div id="lb-iphone-15-pro-max" class="lightbox" role="dialog" aria-modal="true" aria-label="iPhone 15 Pro Max, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/iphone15promax.jpeg" alt="iPhone 15 Pro Max" />
+        <figcaption>iPhone 15 Pro Max</figcaption>
+      </figure>
+    </div>
+    <div id="lb-macbook-pro-m3" class="lightbox" role="dialog" aria-modal="true" aria-label="MacBook Pro M3, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/macbookprom3.jpg" alt="MacBook Pro M3" />
+        <figcaption>MacBook Pro M3</figcaption>
+      </figure>
+    </div>
+    <div id="lb-apple-watch-ultra-2" class="lightbox" role="dialog" aria-modal="true" aria-label="Apple Watch Ultra 2, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/applewatchultra2.jpg" alt="Apple Watch Ultra 2" />
+        <figcaption>Apple Watch Ultra 2</figcaption>
+      </figure>
+    </div>
+    <div id="lb-samsung-galaxy-s24-ultra" class="lightbox" role="dialog" aria-modal="true" aria-label="Samsung Galaxy S24 Ultra, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/samsung_s24_ultra_512.jpg" alt="Samsung Galaxy S24 Ultra" />
+        <figcaption>Samsung Galaxy S24 Ultra</figcaption>
+      </figure>
+    </div>
+    <div id="lb-asus-rog-zephyrus-g14" class="lightbox" role="dialog" aria-modal="true" aria-label="ASUS ROG Zephyrus G14, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/81zrEeTlHbL.jpg" alt="ASUS ROG Zephyrus G14" />
+        <figcaption>ASUS ROG Zephyrus G14</figcaption>
+      </figure>
+    </div>
+    <div id="lb-samsung-galaxy-watch-7-ultra" class="lightbox" role="dialog" aria-modal="true" aria-label="Samsung Galaxy Watch 7 Ultra, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/images.jpg" alt="Samsung Galaxy Watch 7 Ultra" />
+        <figcaption>Samsung Galaxy Watch 7 Ultra</figcaption>
+      </figure>
+    </div>
+    <div id="lb-sony-wh-1000xm6" class="lightbox" role="dialog" aria-modal="true" aria-label="Sony WH-1000XM6, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/Sluchawki-nauszne-SONY-WH-1000XM6-ANC-Czarny-1.jpg" alt="Sony WH-1000XM6" />
+        <figcaption>Sony WH-1000XM6</figcaption>
+      </figure>
+    </div>
+    <div id="lb-ipad-pro-m4" class="lightbox" role="dialog" aria-modal="true" aria-label="iPad Pro M4, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/iPad_Pro_11_M4_Cellular_Space_Black_PDP_Image_Position_1b__pl_PL_4.jpg" alt="iPad Pro M4" />
+        <figcaption>iPad Pro M4</figcaption>
+      </figure>
+    </div>
+    <div id="lb-playstation-5-pro" class="lightbox" role="dialog" aria-modal="true" aria-label="PlayStation 5 Pro, изображение">
+      <a class="lightbox__backdrop" href="#gallery" aria-label="Закрыть"></a>
+      <figure class="lightbox__content">
+        <a class="lightbox__close" href="#gallery" aria-label="Закрыть">×</a>
+        <img src="images/Konsola-PlayStation-5-Pro-EAN-GTIN-711719595472.jpg" alt="PlayStation 5 Pro" />
+        <figcaption>PlayStation 5 Pro</figcaption>
+      </figure>
+    </div>
+
+        <footer>
+      <div class="container footer-wrap">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" title="На главную">
+            <img src="images/logo.jpg" alt="Логотип Tech-Gid" />
+            <span>Tech-Gid</span>
+          </a>
+          <div class="footer-copy">Независимый справочник по современной технике.</div>
+          <div class="footer-social">
+            <a class="footer-social-link" href="https://t.me/quazzzarr" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="footer-social-link" href="mailto:temakvlvch@gmail.com">✉ Email</a>
+          </div>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Материалы</div>
+          <a href="reviews.html">Обзоры</a>
+          <a href="tests.html">Тестирования</a>
+          <a href="gallery.html">Галерея техники</a>
+          <a href="partners.html">Партнёры</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Разделы</div>
+          <a href="faq.html">FAQ</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="sitemap.html">Карта сайта</a>
+          <a href="about-author.html">О разработчике</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Аккаунт</div>
+          <a href="login.html">Вход</a>
+          <a href="register.html">Регистрация</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom-copy">&copy; 2026 Tech-Gid. Все права защищены.</span>
+          <div class="footer-bottom-links">
+            <a href="privacy.html">Конфиденциальность</a>
+            <a href="sitemap.html">Карта сайта</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

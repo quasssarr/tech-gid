@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Gid — Технологии без лишней рекламы</title>
+    <link rel="author" href="https://t.me/quazzzarr" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">menu<span></span></label>
+  <ul class="menu__box">
+    <li><a class="menu__item menu__item--cta" href="login.html">Вход</a></li>
+    <li><a class="menu__item" href="index.html">Главная</a></li>
+    <li><a class="menu__item" href="gallery.html">Галерея техники</a></li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-reviews" class="menu__sub-toggle" />
+      <label for="sub-reviews" class="menu__item">Обзоры <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="reviews.html">Все обзоры</a></li>
+        <li><a class="menu__subitem" href="reviews.html#smartphones">Смартфоны</a></li>
+        <li><a class="menu__subitem" href="reviews.html#notebooks">Ноутбуки</a></li>
+        <li><a class="menu__subitem" href="reviews.html#gadgets">Гаджеты</a></li>
+      </ul>
+    </li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-tests" class="menu__sub-toggle" />
+      <label for="sub-tests" class="menu__item">Тестирования <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="tests.html">Все тесты</a></li>
+        <li><a class="menu__subitem" href="tests.html#performance">Производительность</a></li>
+        <li><a class="menu__subitem" href="tests.html#battery">Автономность</a></li>
+        <li><a class="menu__subitem" href="tests.html#cameras">Камеры</a></li>
+      </ul>
+    </li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-partners" class="menu__sub-toggle" />
+      <label for="sub-partners" class="menu__item">Партнёры <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="partners.html">Все партнёры</a></li>
+        <li><a class="menu__subitem" href="partners.html#service">Сервисные центры</a></li>
+        <li><a class="menu__subitem" href="partners.html#shops">Магазины техники</a></li>
+      </ul>
+    </li>
+    <li><a class="menu__item" href="faq.html">FAQ</a></li>
+    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+</ul>
+</div>
+    <header>
+      <div class="container header-wrap">
+        <a class="logo" href="index.html" title="На главную">
+          <img src="images/logo.jpg" alt="Логотип Tech-Gid" />
+          <span>Tech-Gid</span>
+        </a>
+        <nav class="top-nav" aria-label="Основная навигация">
+        <ul>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-reviews" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-reviews">Обзоры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="reviews.html">Все обзоры</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#smartphones">Смартфоны</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#notebooks">Ноутбуки</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#gadgets">Гаджеты</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-tests" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-tests">Тестирования <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="tests.html">Все тесты</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#performance">Производительность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#battery">Автономность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#cameras">Камеры</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-partners" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-partners">Партнёры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="partners.html">Все партнёры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#service">Сервисные центры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#shops">Магазины техники</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link top-nav__link--cta" href="login.html">Вход</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h1>Технологии<br>без лишней рекламы</h1>
+        <p>
+          Tech-Gid — сайт о современной технике с практическими обзорами и тестами. Никаких сложных формулировок: только реальные сценарии — автономность, скорость, камера в темноте, удобство в руке. Чтобы выбрать смартфон, ноутбук или гаджет по делу, а не по цифрам в характеристиках.
+        </p>
+        <p>
+          Мы не пишем простыни текста. Каждый обзор — максимум пользы на 2 минуты чтения. Структура простая — за пару кликов найдёте что надо.
+        </p>
+        <a class="btn" href="reviews.html" title="К разделу обзоров">Перейти к обзорам</a>
+        <a class="btn btn-outline" href="tests.html" title="К разделу тестирований">Перейти к тестам</a>
+      </section>
+      <section class="section">
+        <h2>Свежие обзоры</h2>
+        <div class="cards">
+          <article class="card">
+            <img class="card-thumb" src="images/iphone15promax.jpeg" alt="iPhone 15 Pro Max" />
+            <div class="card-body">
+              <span class="tag">Смартфон</span>
+              <span class="score">9.2 / 10</span>
+              <h3><a href="#" title="Открыть обзор iPhone 15 Pro Max">iPhone 15 Pro Max</a></h3>
+              <p class="muted">Подробный тест автономности, камер и общей скорости системы.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/macbookprom3.jpg" alt="MacBook Pro M3" />
+            <div class="card-body">
+              <span class="tag">Ноутбук</span>
+              <span class="score">9.5 / 10</span>
+              <h3><a href="#" title="Открыть обзор MacBook Pro M3">MacBook Pro M3</a></h3>
+              <p class="muted">Проверка производительности в дизайне, коде и многозадачности.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/applewatchultra2.jpg" alt="Apple Watch Ultra 2" />
+            <div class="card-body">
+              <span class="tag">Гаджет</span>
+              <span class="score">8.8 / 10</span>
+              <h3><a href="#" title="Открыть обзор Apple Watch Ultra 2">Apple Watch Ultra 2</a></h3>
+              <p class="muted">Оценка функций здоровья, спорта и удобства в повседневной носке.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Как мы оцениваем технику</h2>
+        <p>
+          Мы смотрим на устройство как на инструмент: насколько оно удобно каждый день, а не насколько «красиво выглядит» список
+          характеристик.
+        </p>
+        <p>
+          В обзорах больше внимания ощущению от использования (экран, скорость, камера в сложных сценах, качество сборки). В тестах —
+          замеры автономности, нагрева и стабильности под нагрузкой. Итоговая оценка — баланс, а не гонка за максимальными цифрами.
+        </p>
+        <p class="muted">
+          Если выбираете между двумя моделями, сравните три пункта: батарею в реальном дне, камеру ночью и нагрев в тяжёлых задачах —
+          именно они чаще всего решают, будет ли устройство «радовать» через полгода.
+        </p>
+      </section>
+      <section class="section">
+        <p><a href="https://www.bartc.by">Сайт колледжа: www.bartc.by</a></p>
+        <p><a href="https://templatemo.com/tm-594-nexus-flow" title="Исходники">Опирался на это при разработке макета</a></p>
+      </section>
+    </main>
+        <footer>
+      <div class="container footer-wrap">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" title="На главную">
+            <img src="images/logo.jpg" alt="Логотип Tech-Gid" />
+            <span>Tech-Gid</span>
+          </a>
+          <div class="footer-copy">Независимый справочник по современной технике.</div>
+          <div class="footer-social">
+            <a class="footer-social-link" href="https://t.me/quazzzarr" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="footer-social-link" href="mailto:temakvlvch@gmail.com">✉ Email</a>
+          </div>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Материалы</div>
+          <a href="reviews.html">Обзоры</a>
+          <a href="tests.html">Тестирования</a>
+          <a href="gallery.html">Галерея техники</a>
+          <a href="partners.html">Партнёры</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Разделы</div>
+          <a href="faq.html">FAQ</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="sitemap.html">Карта сайта</a>
+          <a href="about-author.html">О разработчике</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Аккаунт</div>
+          <a href="login.html">Вход</a>
+          <a href="register.html">Регистрация</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom-copy">&copy; 2026 Tech-Gid. Все права защищены.</span>
+          <div class="footer-bottom-links">
+            <a href="privacy.html">Конфиденциальность</a>
+            <a href="sitemap.html">Карта сайта</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

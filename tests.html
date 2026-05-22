@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Gid - Тестирования</title>
+    <link rel="author" href="https://t.me/quazzzarr" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">menu<span></span></label>
+  <ul class="menu__box">
+    <li><a class="menu__item menu__item--cta" href="login.html">Вход</a></li>
+    <li><a class="menu__item" href="index.html">Главная</a></li>
+    <li><a class="menu__item" href="gallery.html">Галерея техники</a></li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-reviews" class="menu__sub-toggle" />
+      <label for="sub-reviews" class="menu__item">Обзоры <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="reviews.html">Все обзоры</a></li>
+        <li><a class="menu__subitem" href="reviews.html#smartphones">Смартфоны</a></li>
+        <li><a class="menu__subitem" href="reviews.html#notebooks">Ноутбуки</a></li>
+        <li><a class="menu__subitem" href="reviews.html#gadgets">Гаджеты</a></li>
+      </ul>
+    </li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-tests" class="menu__sub-toggle" />
+      <label for="sub-tests" class="menu__item">Тестирования <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="tests.html">Все тесты</a></li>
+        <li><a class="menu__subitem" href="tests.html#performance">Производительность</a></li>
+        <li><a class="menu__subitem" href="tests.html#battery">Автономность</a></li>
+        <li><a class="menu__subitem" href="tests.html#cameras">Камеры</a></li>
+      </ul>
+    </li>
+    <li class="menu__has-sub">
+      <input type="checkbox" id="sub-partners" class="menu__sub-toggle" />
+      <label for="sub-partners" class="menu__item">Партнёры <span class="menu__arrow">›</span></label>
+      <ul class="menu__sub">
+        <li><a class="menu__subitem" href="partners.html">Все партнёры</a></li>
+        <li><a class="menu__subitem" href="partners.html#service">Сервисные центры</a></li>
+        <li><a class="menu__subitem" href="partners.html#shops">Магазины техники</a></li>
+      </ul>
+    </li>
+    <li><a class="menu__item" href="faq.html">FAQ</a></li>
+    <li><a class="menu__item" href="contacts.html">Контакты</a></li>
+</ul>
+</div>
+    <header>
+      <div class="container header-wrap">
+        <a class="logo" href="index.html" title="На главную"
+          ><img src="images/logo.jpg" alt="Логотип Tech-Gid" /><span
+            >Tech-Gid</span
+          ></a
+        >
+        <nav class="top-nav" aria-label="Основная навигация">
+        <ul>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-reviews" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-reviews">Обзоры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="reviews.html">Все обзоры</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#smartphones">Смартфоны</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#notebooks">Ноутбуки</a></li>
+              <li><a class="top-nav__dropdown-link" href="reviews.html#gadgets">Гаджеты</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-tests" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-tests">Тестирования <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="tests.html">Все тесты</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#performance">Производительность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#battery">Автономность</a></li>
+              <li><a class="top-nav__dropdown-link" href="tests.html#cameras">Камеры</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="top-nav__item">
+            <input type="checkbox" id="tn-partners" class="top-nav__toggle" />
+            <label class="top-nav__toggle-label" for="tn-partners">Партнёры <span class="top-nav__arrow">▾</span></label>
+            <ul class="top-nav__dropdown">
+              <li><a class="top-nav__dropdown-link" href="partners.html">Все партнёры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#service">Сервисные центры</a></li>
+              <li><a class="top-nav__dropdown-link" href="partners.html#shops">Магазины техники</a></li>
+            </ul>
+          </li>
+          <li class="top-nav__item">
+            <a class="top-nav__link top-nav__link--cta" href="login.html">Вход</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <h1>Тестирования</h1>
+        <p>
+          Тесты — это не «сухие цифры ради цифр». Мы измеряем то, что влияет на ощущения: плавность интерфейса, скорость запуска
+          приложений, нагрев под нагрузкой и как быстро садится батарея в реальных сценариях.
+        </p>
+        <p class="muted">
+          Простой ориентир: если устройство держит стабильную производительность без троттлинга — оно будет ощущаться «быстрым» даже
+          через год.
+        </p>
+        <nav class="tabs" aria-label="Разделы тестирований">
+          <a class="tab-link active" href="#performance">Производительность</a>
+          <a class="tab-link" href="#battery">Автономность</a>
+          <a class="tab-link" href="#cameras">Камеры</a>
+        </nav>
+      </section>
+
+      <section class="section" id="performance">
+        <h2>Производительность</h2>
+        <p class="muted">
+          Проверяем не только «цифры в бенчмарках», а реальные сценарии: монтаж, рендер, браузер с десятками вкладок, игры, стабильность
+          FPS и нагрев под нагрузкой.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <img class="card-thumb" src="images/macbookprom3.jpg" alt="MacBook Pro M3" />
+            <div class="card-body">
+              <span class="tag">Ноутбук</span>
+              <span class="score">9.6 / 10</span>
+              <h3><a href="#" title="Открыть тест MacBook Pro M3">MacBook Pro M3</a></h3>
+              <p class="muted">Рендер, компиляция, многозадачность и стабильность производительности в длительной нагрузке.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/Konsola-PlayStation-5-Pro-EAN-GTIN-711719595472.jpg" alt="PlayStation 5 Pro" />
+            <div class="card-body">
+              <span class="tag">Консоль</span>
+              <span class="score">9.2 / 10</span>
+              <h3><a href="#" title="Открыть тест PlayStation 5 Pro">PlayStation 5 Pro</a></h3>
+              <p class="muted">FPS, трассировка лучей, загрузки и нагрев — что даёт «Pro» в реальных играх.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/samsung_s24_ultra_512.jpg" alt="Samsung Galaxy S24 Ultra" />
+            <div class="card-body">
+              <span class="tag">Смартфон</span>
+              <span class="score">9.3 / 10</span>
+              <h3><a href="#" title="Открыть тест Samsung Galaxy S24 Ultra">Samsung Galaxy S24 Ultra</a></h3>
+              <p class="muted">Стабильность в играх, скорость камеры, нагрев и «тяжёлые» задачи (монтаж, обработка фото).</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="battery">
+        <h2>Автономность</h2>
+        <p class="muted">
+          Сценарии: YouTube, соцсети, камера, навигация и отдельный «день на мобильном интернете». Важно не только время работы, но и то,
+          как быстро устройство теряет заряд под нагрузкой.
+        </p>
+        <div class="cards">
+          <article class="card">
+            <img class="card-thumb" src="images/iphone15promax.jpeg" alt="iPhone 15 Pro Max" />
+            <div class="card-body">
+              <span class="tag">Смартфон</span>
+              <span class="score">9.1 / 10</span>
+              <h3><a href="#" title="Открыть тест автономности iPhone 15 Pro Max">iPhone 15 Pro Max</a></h3>
+              <p class="muted">Экран 120 Гц, камера и «тяжёлые» приложения — сколько держит в реальном дне.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/iPad_Pro_11_M4_Cellular_Space_Black_PDP_Image_Position_1b__pl_PL_4.jpg" alt="iPad Pro M4" />
+            <div class="card-body">
+              <span class="tag">Планшет</span>
+              <span class="score">8.8 / 10</span>
+              <h3><a href="#" title="Открыть тест автономности iPad Pro M4">iPad Pro M4</a></h3>
+              <p class="muted">OLED + M4: видео, заметки, браузер и лёгкий монтаж без постоянной розетки.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/applewatchultra2.jpg" alt="Apple Watch Ultra 2" />
+            <div class="card-body">
+              <span class="tag">Гаджет</span>
+              <span class="score">8.9 / 10</span>
+              <h3><a href="#" title="Открыть тест автономности Apple Watch Ultra 2">Apple Watch Ultra 2</a></h3>
+              <p class="muted">Тренировки, AOD, уведомления и GPS: сколько держит и как быстро заряжается.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="cameras">
+        <h2>Камеры</h2>
+        <p class="muted">
+          Тестируем ночь, контровой свет, портреты, стабилизацию видео и скорость переключения между модулями. Важно, чтобы результат был
+          стабильным, а не «идеальным один раз».
+        </p>
+        <div class="cards">
+          <article class="card">
+            <img class="card-thumb" src="images/iphone15promax.jpeg" alt="iPhone 15 Pro Max" />
+            <div class="card-body">
+              <span class="tag">Смартфон</span>
+              <span class="score">9.4 / 10</span>
+              <h3><a href="#" title="Открыть тест камеры iPhone 15 Pro Max">iPhone 15 Pro Max</a></h3>
+              <p class="muted">Ночной режим, портреты, зум и стабильность видео в движении.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/samsung_s24_ultra_512.jpg" alt="Samsung Galaxy S24 Ultra" />
+            <div class="card-body">
+              <span class="tag">Смартфон</span>
+              <span class="score">9.2 / 10</span>
+              <h3><a href="#" title="Открыть тест камеры Samsung Galaxy S24 Ultra">Samsung Galaxy S24 Ultra</a></h3>
+              <p class="muted">200 Мп, зум, HDR и работа автоматики: быстрые сцены и сложный свет.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-thumb" src="images/iPad_Pro_11_M4_Cellular_Space_Black_PDP_Image_Position_1b__pl_PL_4.jpg" alt="iPad Pro M4" />
+            <div class="card-body">
+              <span class="tag">Планшет</span>
+              <span class="score">8.4 / 10</span>
+              <h3><a href="#" title="Открыть тест камеры iPad Pro M4">iPad Pro M4</a></h3>
+              <p class="muted">Звонки, сканы документов, видео и автофокус — типичные сценарии планшета.</p>
+            </div>
+          </article>
+        </div>
+        <p class="muted">
+          Чтобы сохранять понравившиеся тесты и возвращаться к ним позже, можно <a href="register.html">зарегистрироваться</a>.
+        </p>
+      </section>
+    </main>
+        <footer>
+      <div class="container footer-wrap">
+        <div class="footer-brand">
+          <a class="footer-logo" href="index.html" title="На главную">
+            <img src="images/logo.jpg" alt="Логотип Tech-Gid" />
+            <span>Tech-Gid</span>
+          </a>
+          <div class="footer-copy">Независимый справочник по современной технике.</div>
+          <div class="footer-social">
+            <a class="footer-social-link" href="https://t.me/quazzzarr" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="footer-social-link" href="mailto:temakvlvch@gmail.com">✉ Email</a>
+          </div>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Материалы</div>
+          <a href="reviews.html">Обзоры</a>
+          <a href="tests.html">Тестирования</a>
+          <a href="gallery.html">Галерея техники</a>
+          <a href="partners.html">Партнёры</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Разделы</div>
+          <a href="faq.html">FAQ</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="sitemap.html">Карта сайта</a>
+          <a href="about-author.html">О разработчике</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-col-title">Аккаунт</div>
+          <a href="login.html">Вход</a>
+          <a href="register.html">Регистрация</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom-copy">&copy; 2026 Tech-Gid. Все права защищены.</span>
+          <div class="footer-bottom-links">
+            <a href="privacy.html">Конфиденциальность</a>
+            <a href="sitemap.html">Карта сайта</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
